@@ -210,12 +210,7 @@
         align-items: center;
 
     }
-    .header-info{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+    
     .header-img img{
         margin-top: 50px;
         width: 100%;
@@ -239,9 +234,11 @@
     .highlight-img{
         margin-top: 28px;
     }
-    .highlight-img img{
+    .highlight-pic img{
         width: 100%;
-    }
+        margin-top: 50px;
+        height: 430px;
+     }
     .clubs{
         flex-direction: column;
         align-items: center;
@@ -251,9 +248,11 @@
         padding-top: 10px;
         width: 80%;
     }
-    .footer{
-    
-        width: 80%;
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 85%;
         margin: 50px 0px 150px 0px;
     }
     
