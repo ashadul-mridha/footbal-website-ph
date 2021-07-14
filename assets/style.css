@@ -1,0 +1,262 @@
+ /* common css  */
+
+ body{
+     margin: 0px;
+     padding: 0px;
+     font-family: 'Poppins', sans-serif;
+     background-color: #FFFFFF;
+     box-sizing: border-box;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ .container{
+     width: 1050px;
+ }
+
+ .btn{
+
+    color: #FFFFFF;
+    font-size: 1rem;
+    padding: 10px 24px;
+    background: #E02C6D;
+    text-decoration: none;
+    margin-top: 25px;
+
+ }
+ .btn>i{
+     margin-left: 8px;
+ }
+ /* .btn:hover{
+    transform: scale(5.5);
+ } */
+
+
+ /* header part css */
+ header{
+     width: 100%;
+    background: #2D25A0;
+    padding: 80px 0px;
+    display: flex;
+    justify-content: space-around;
+    
+ }
+ .header-info h2{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4rem;
+    color: #FFFFFF;
+ }
+ .header-img img{
+
+    width: 556.01px;
+    height: 438px;
+    transition: transform 2s ease-in-out;
+ }
+
+ header:hover .header-img img{
+     transform: matrix(-1, 0, 0, 1, 0, 0);
+ }
+
+ /* main area css */
+
+ main{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 70px;
+ }
+ /* players area css */
+
+ .players{
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-column-gap: 30px;
+     grid-row-gap: 27px;
+     /* width: 1050px; */
+     /* width: 100%;
+     text-align: justify;
+     justify-content: center;
+     align-items: center; */
+ }
+
+ .player{
+     padding: 15px;
+     box-shadow: 0px 0px 40px 0px #00000026;
+ }
+ 
+
+ .player img{
+     width: 300px;
+     height: 256px;
+ }
+ .player-name{
+
+    color: #18191F;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: capitalize;
+
+ }
+
+ .player-info{
+     font-size: 16px;
+     color: #6C6C6C;
+     line-height: 26px;
+     font-weight: 500;
+
+ }
+
+ /* highlight video  */
+
+ .highlights-video{
+     display: flex;
+     align-items: center;
+     margin-top: 165px;
+ }
+/* .heightlight-details{
+    padding-top: 60px;
+} */
+ .heightlight-details h2{
+     font-size: 48px;
+     line-height: 60px;
+     color: #0A0826;
+     font-weight: 700;
+     margin: 8px 0px;
+ }
+ .heightlight-details p{
+    color: #6C6C6C;
+    font-size: 16px;
+    line-height: 28px;
+    /* margin-right: 65px; */
+
+ }
+ .highlight-pic img{
+    width: 560px;
+    height: 430px;
+ }
+
+ /* partnarship area  */
+
+ .partnership-area{
+     margin-top: 50px;
+ }
+
+ .partnership-area h2{
+     color: #0A0826;
+     font-size: 32px;
+ }
+
+ .clubs{
+     display: flex;
+     justify-content: space-around;
+     padding: 10px;
+
+ }
+ .club img{
+     width: 100%;
+ }
+
+ /* footer css  */
+
+ footer{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     /* grid-row-gap: 20px;
+     justify-items: center; */
+     
+     width: 35%;
+     margin: 150px 0px 50px 0px;
+ }
+
+ footer img{
+     width: 100%;
+
+ }
+ footer .social-media a{
+     text-decoration: none;
+     display: inline-block;
+     margin-right: 14px;
+     background-color: #DFDFDF;
+     width: 32px;
+     height: 32px;
+     border-radius: 15px;
+ }
+ footer .social-media a i{
+     color: #969BAB;
+     display: flex;
+     align-items: center;
+     height: 100%;
+     justify-content: center;
+ }
+ footer p{
+     font-size: 18px;
+ }
+
+
+ /* responsive with media query */
+
+ /* mobile device */
+
+ @media  only screen and (max-width: 668px) {
+
+    header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .header-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-img img{
+        margin-top: 50px;
+        width: 100%;
+        height: 80%;
+        
+    }
+    .container{
+        width: 360px;
+    }
+
+    .players{
+        grid-template-columns: repeat(1,1fr);
+        padding: 0 15px;
+    }
+    .heightlight-details btn{
+        margin-top: 24px;
+    }
+    .highlights-video{
+        flex-direction: column;
+    }
+    .highlight-img{
+        margin-top: 28px;
+    }
+    .highlight-img img{
+        width: 100%;
+    }
+    .clubs{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .club img {
+        padding-top: 10px;
+        width: 80%;
+    }
+    .footer{
+    
+        width: 80%;
+        margin: 50px 0px 150px 0px;
+    }
+    
+     
+ }
+
